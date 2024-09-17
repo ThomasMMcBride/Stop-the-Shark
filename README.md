@@ -1,2 +1,2 @@
-# hangman
-Simple command line hangman game in Python
+# Stop the Shark
+Simple command line word-guessing game in Python. 
