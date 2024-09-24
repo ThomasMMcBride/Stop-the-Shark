@@ -457,12 +457,14 @@ class Controller:
         elif self.model.player_wins():
             self.view.show_man(21 - self.model.lives)
             self.view.display_text(f"Number of lives lost: {10 - self.model.lives}")
-            self.view.display_text(f"Final word: {''.join(self.model.word_so_far)}")
+            self.view.display_text(f"Word: {''.join(self.model.word_to_guess)}")
             self.view.display_game_won()
 
 
 if __name__ == "__main__":
-    words = ['colorstack', 'black', 'latinx', 'excellence', 'chipotle', "model", "view", "controller"]
+    with open("words.txt") as word_file:
+        words = word_file.readlines() 
+        words = [word.strip() for word in words]
     model = Model(words)
     view = View()
     controller = Controller(model, view)
