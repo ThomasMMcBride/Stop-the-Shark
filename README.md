@@ -7,6 +7,6 @@ Simple command line word-guessing game in Python.
 - Open Terminal
 - run: `git clone https://github.com/ThomasMMcBride/Stop-the-Shark-Starter-Code.git`
 - `cd` into the  `Stop-the-Shark-Starter-Code` directory
-- run: `python Main.py`
+- run: `python3 Main.py`
 - Play!
 
